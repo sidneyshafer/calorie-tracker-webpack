@@ -19,4 +19,4 @@ Build for production:
 ```
 npm run build
 ```
-production files will be in the `dist` folder.
+Production files will be in the `dist` folder.
