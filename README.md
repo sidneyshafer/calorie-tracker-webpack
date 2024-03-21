@@ -1,4 +1,4 @@
-# Tracalorie Webpack Application
+# Calorie Tracker Webpack App
 An application built using Webpack that tracks calories, meals, and workouts.
 
 ## User Interface
