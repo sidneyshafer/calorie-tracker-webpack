@@ -13,7 +13,10 @@ Run dev server:
 ```
 npm start
 ```
+Project will run on `http://localhost:3000`
+
 Build for production:
 ```
 npm run build
 ```
+production files will be in the `dist` folder.
