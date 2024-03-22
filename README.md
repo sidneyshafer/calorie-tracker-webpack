@@ -11,7 +11,7 @@ npm install
 ```
 Run dev server:
 ```
-npm start
+npm run dev
 ```
 App will run on `http://localhost:3000`
 
