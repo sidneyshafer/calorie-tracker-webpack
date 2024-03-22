@@ -1,7 +1,7 @@
 # Calorie Tracker
 A Webpack application using Bootstrap and custom CSS styles to tracks calories, meals, and workouts.
 
-Check out the :link:[Live Demo](https://fastidious-taiyaki-3f705a.netlify.app/).
+Check out the :link:[Live Demo](https://fastidious-taiyaki-3f705a.netlify.app/)
 
 ## User Interface
 
