@@ -11,15 +11,17 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Tracalorie 2.0 | Track your Caloric Intake</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calroie Tracker| Track your Caloric Intake</title>
   </head>
-  <body>
+  <body class="main-bg-override font-override">
     <header
-      class="bg-primary d-sm-flex justify-content-between align-items-center text-white text-center py-2 px-5"
+      class="bg-dark d-sm-flex justify-content-between align-items-center text-white text-center py-3 px-5"
     >
-      <h1><i class="fa-solid fa-utensils"></i> Tracalorie</h1>
+      <h1><i class="fa-solid fa-utensils i-text"></i> Calorie Tracker</h1>
       <div>
         <button
+          id="limit"
           class="btn btn-outline-light mx-3"
           data-bs-toggle="modal"
           data-bs-target="#limit-modal"
@@ -42,8 +44,8 @@
           </div>
         </div>
          <div class="col-md-6">
-          <div class="card text-center bg-primary text-white">
-            <div class="card-body">
+          <div class="card text-center background">
+            <div class="card-body text-white">
               <div id="calories-total" class="fs-1 fw-bold"></div>
               <p class="fs-4">Gain/Loss</p>
             </div>
@@ -79,10 +81,9 @@
     </section>
 
      <section class="px-5">
-      <div class="progress">
+      <div id="calorie-progress">
         <div
-          id="calorie-progress"
-          class="progress-bar"
+          id="calorie-progress-bar"
           role="progressbar"
         ></div>
       </div>
@@ -119,12 +120,13 @@
       <div class="row g-4">
         <!-- Meals -->
         <div class="col-md-6">
-          <div class="d-flex align-items-center">
-            <h2 class="border-start border-primary border-3 p-2">
+          <div class="d-flex align-items-center text-white mb-3">
+            <h2 class="border-meals border-3 p-2">
               Meals / Food Items
             </h2>
             <button
-              class="btn btn-primary btn-sm ms-auto text-white fw-bold py-2 px-3 h-100"
+            id="btn-add-meal"
+              class="btn btn-sm ms-auto text-white fw-bold py-2 px-3 h-100"
               data-bs-toggle="collapse"
               data-bs-target="#collapse-meal"
               aria-expanded="false"
@@ -154,7 +156,7 @@
                     placeholder="Enter Calories"
                   />
                 </div>
-                <button type="submit" class="btn btn-primary text-white">
+                <button id="btn-add-item" type="submit" class="btn text-white">
                   Add Meal Item
                 </button>
               </form>
@@ -165,12 +167,13 @@
         </div>
         <!-- Workout -->
         <div class="col-md-6">
-          <div class="d-flex align-items-center">
-            <h2 class="border-start border-secondary border-3 p-2">
+          <div class="d-flex align-items-center text-white mb-3">
+            <h2 class="border-workouts border-3 p-2">
               Workouts
             </h2>
             <button
-              class="btn btn-secondary btn-sm ms-auto text-white fw-bold py-2 px-3 h-100"
+              id="btn-add-workout"
+              class="btn btn-sm ms-auto text-white fw-bold py-2 px-3 h-100"
               data-bs-toggle="collapse"
               data-bs-target="#collapse-workout"
               aria-expanded="false"
@@ -200,7 +203,7 @@
                     placeholder="Enter Calories"
                   />
                 </div>
-                <button type="submit" class="btn btn-primary text-white">
+                <button id="btn-add-workout-item" type="submit" class="btn text-white">
                   Add Workout Item
                 </button>
               </form>
@@ -247,7 +250,7 @@
                 />
               </div>
 
-              <button type="submit" class="btn btn-primary text-white">
+              <button id="btn-save" type="submit" class="btn text-white">
                 Save 
               </button>
             </form>

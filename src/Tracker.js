@@ -135,12 +135,13 @@ class CalorieTracker {
         const mealsEl = document.getElementById('meal-items');
         const mealEl = document.createElement('div');
         mealEl.classList.add('card', 'my-2');
+        mealEl.id = "meal-card-override";
         mealEl.setAttribute('data-id', meal.id);
         mealEl.innerHTML = `
-            <div class="card-body">
+            <div class="card-body bg-dark">
                 <div class="d-flex align-items-center justify-content-between">
                     <h4 class="mx-1">${meal.name}</h4>
-                    <div class="fs-1 bg-primary text-white text-center rounded-2 px-2 px-sm-5">
+                    <div class="fs-1 meal-calories text-white text-center rounded-2 px-2 px-sm-5">
                         ${meal.calories}
                     </div>
                     <button class="delete btn btn-danger btn-sm mx-2">
@@ -157,12 +158,13 @@ class CalorieTracker {
         const workoutsEl = document.getElementById('workout-items');
         const workoutEl = document.createElement('div');
         workoutEl.classList.add('card', 'my-2');
+        workoutEl.id = "workout-card-override";
         workoutEl.setAttribute('data-id', workout.id);
         workoutEl.innerHTML = `
-            <div class="card-body">
+            <div class="card-body bg-dark">
                 <div class="d-flex align-items-center justify-content-between">
                     <h4 class="mx-1">${workout.name}</h4>
-                    <div class="fs-1 bg-secondary text-white text-center rounded-2 px-2 px-sm-5">
+                    <div class="fs-1 workout-calories text-white text-center rounded-2 px-2 px-sm-5">
                         ${workout.calories}
                     </div>
                     <button class="delete btn btn-danger btn-sm mx-2">
