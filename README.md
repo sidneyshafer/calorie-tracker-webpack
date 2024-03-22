@@ -2,7 +2,8 @@
 An application built using Webpack that tracks calories, meals, and workouts.
 
 ## User Interface
-![image](https://github.com/sidneyshafer/tracalorie-webpack/assets/66838571/658df57f-443d-4609-8d2e-fc43f47cc8bc)
+
+![calorie-tracker](https://github.com/sidneyshafer/calorie-tracker-webpack/assets/66838571/5359ff98-4e1d-4708-9dd1-a05a663bf8fd)
 
 ## App Usage
 Install dependencies
