@@ -1,5 +1,5 @@
-# Calorie Tracker Webpack App
-An application built using Webpack that tracks calories, meals, and workouts.
+# Calorie Tracker
+A Webpack application using Bootstrap and custom CSS styles to tracks calories, meals, and workouts.
 
 Check out the :link:[Live Demo](https://fastidious-taiyaki-3f705a.netlify.app/).
 
